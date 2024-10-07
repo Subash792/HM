@@ -1,2 +1,4 @@
-This repository will be a collection of verilog code of digital systems that I will try to model using verilog.
-It is a repository where I learn. 
+This repository will contain verilog code of various small to medium scale digital systems.  
+1. GCD calculator
+Computes the GCD of any two positive integers through the algortihm of repated subtraction.  
+The control logic is a finite state machine.
