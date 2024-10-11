@@ -45,8 +45,6 @@ begin
     generate_stimulus();
 end
 
-
-
 initial
 # 1000 $finish;
 
