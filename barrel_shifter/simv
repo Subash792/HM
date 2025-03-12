@@ -1,0 +1,484 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7fe5b5004790 .scope module, "tb" "tb" 2 2;
+ .timescale -12 -12;
+v0x7fe5b560a9a0_0 .var "a", 31 0;
+v0x7fe5b560aa60_0 .var "b", 31 0;
+v0x7fe5b560ab10_0 .var "in", 31 0;
+v0x7fe5b560ac00_0 .var "lr", 0 0;
+v0x7fe5b560ac90_0 .net "out", 31 0, L_0x7fe5b560ef80;  1 drivers
+v0x7fe5b560ad60_0 .var "shft_amt", 4 0;
+S_0x7fe5b5004910 .scope module, "dut" "barrel_shifter_32b" 2 9, 3 16 0, S_0x7fe5b5004790;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 32 "in";
+    .port_info 1 /INPUT 5 "shift_amt";
+    .port_info 2 /INPUT 1 "lr";
+    .port_info 3 /OUTPUT 32 "out";
+v0x7fe5b5609230_0 .net *"_ivl_13", 0 0, L_0x7fe5b560d370;  1 drivers
+v0x7fe5b56092f0_0 .net *"_ivl_15", 29 0, L_0x7fe5b560d410;  1 drivers
+L_0x7fe5b5152050 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v0x7fe5b56093a0_0 .net/2u *"_ivl_16", 1 0, L_0x7fe5b5152050;  1 drivers
+v0x7fe5b5609460_0 .net *"_ivl_18", 31 0, L_0x7fe5b560d530;  1 drivers
+v0x7fe5b5609510_0 .net *"_ivl_23", 0 0, L_0x7fe5b560d780;  1 drivers
+v0x7fe5b5609600_0 .net *"_ivl_25", 27 0, L_0x7fe5b560d8a0;  1 drivers
+L_0x7fe5b5152098 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v0x7fe5b56096b0_0 .net/2u *"_ivl_26", 3 0, L_0x7fe5b5152098;  1 drivers
+v0x7fe5b5609760_0 .net *"_ivl_28", 31 0, L_0x7fe5b560d9a0;  1 drivers
+v0x7fe5b5609810_0 .net *"_ivl_3", 0 0, L_0x7fe5b560cf70;  1 drivers
+v0x7fe5b5609920_0 .net *"_ivl_33", 0 0, L_0x7fe5b560dbd0;  1 drivers
+v0x7fe5b56099d0_0 .net *"_ivl_35", 23 0, L_0x7fe5b560dc70;  1 drivers
+L_0x7fe5b51520e0 .functor BUFT 1, C4<00000000>, C4<0>, C4<0>, C4<0>;
+v0x7fe5b5609a80_0 .net/2u *"_ivl_36", 7 0, L_0x7fe5b51520e0;  1 drivers
+v0x7fe5b5609b30_0 .net *"_ivl_38", 31 0, L_0x7fe5b560ddd0;  1 drivers
+v0x7fe5b5609be0_0 .net *"_ivl_43", 0 0, L_0x7fe5b560dfe0;  1 drivers
+v0x7fe5b5609c90_0 .net *"_ivl_45", 15 0, L_0x7fe5b560e080;  1 drivers
+L_0x7fe5b5152128 .functor BUFT 1, C4<0000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x7fe5b5609d40_0 .net/2u *"_ivl_46", 15 0, L_0x7fe5b5152128;  1 drivers
+v0x7fe5b5609df0_0 .net *"_ivl_48", 31 0, L_0x7fe5b560e200;  1 drivers
+v0x7fe5b5609f80_0 .net *"_ivl_5", 30 0, L_0x7fe5b560d050;  1 drivers
+L_0x7fe5b5152008 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x7fe5b560a010_0 .net/2u *"_ivl_6", 0 0, L_0x7fe5b5152008;  1 drivers
+v0x7fe5b560a0c0_0 .net *"_ivl_8", 31 0, L_0x7fe5b560d130;  1 drivers
+v0x7fe5b560a170_0 .net "in", 31 0, v0x7fe5b560ab10_0;  1 drivers
+v0x7fe5b560a230_0 .net "in_rev", 31 0, L_0x7fe5b560bb20;  1 drivers
+v0x7fe5b560a2f0_0 .net "lr", 0 0, v0x7fe5b560ac00_0;  1 drivers
+v0x7fe5b560a390_0 .net "out", 31 0, L_0x7fe5b560ef80;  alias, 1 drivers
+v0x7fe5b560a440_0 .net "s1", 31 0, L_0x7fe5b560c830;  1 drivers
+v0x7fe5b560a4f0_0 .net "s2", 31 0, L_0x7fe5b560d250;  1 drivers
+v0x7fe5b560a5a0_0 .net "s3", 31 0, L_0x7fe5b560d650;  1 drivers
+v0x7fe5b560a650_0 .net "s4", 31 0, L_0x7fe5b560da80;  1 drivers
+v0x7fe5b560a700_0 .net "s5", 31 0, L_0x7fe5b560deb0;  1 drivers
+v0x7fe5b560a7b0_0 .net "s6", 31 0, L_0x7fe5b560e2e0;  1 drivers
+v0x7fe5b560a870_0 .net "s6_inv", 31 0, L_0x7fe5b560f080;  1 drivers
+v0x7fe5b560a900_0 .net "shift_amt", 4 0, v0x7fe5b560ad60_0;  1 drivers
+L_0x7fe5b560c830 .functor MUXZ 32, v0x7fe5b560ab10_0, L_0x7fe5b560bb20, v0x7fe5b560ac00_0, C4<>;
+L_0x7fe5b560cf70 .part v0x7fe5b560ad60_0, 0, 1;
+L_0x7fe5b560d050 .part L_0x7fe5b560c830, 0, 31;
+L_0x7fe5b560d130 .concat [ 1 31 0 0], L_0x7fe5b5152008, L_0x7fe5b560d050;
+L_0x7fe5b560d250 .functor MUXZ 32, L_0x7fe5b560c830, L_0x7fe5b560d130, L_0x7fe5b560cf70, C4<>;
+L_0x7fe5b560d370 .part v0x7fe5b560ad60_0, 1, 1;
+L_0x7fe5b560d410 .part L_0x7fe5b560d250, 0, 30;
+L_0x7fe5b560d530 .concat [ 2 30 0 0], L_0x7fe5b5152050, L_0x7fe5b560d410;
+L_0x7fe5b560d650 .functor MUXZ 32, L_0x7fe5b560d250, L_0x7fe5b560d530, L_0x7fe5b560d370, C4<>;
+L_0x7fe5b560d780 .part v0x7fe5b560ad60_0, 2, 1;
+L_0x7fe5b560d8a0 .part L_0x7fe5b560d650, 0, 28;
+L_0x7fe5b560d9a0 .concat [ 4 28 0 0], L_0x7fe5b5152098, L_0x7fe5b560d8a0;
+L_0x7fe5b560da80 .functor MUXZ 32, L_0x7fe5b560d650, L_0x7fe5b560d9a0, L_0x7fe5b560d780, C4<>;
+L_0x7fe5b560dbd0 .part v0x7fe5b560ad60_0, 3, 1;
+L_0x7fe5b560dc70 .part L_0x7fe5b560da80, 0, 24;
+L_0x7fe5b560ddd0 .concat [ 8 24 0 0], L_0x7fe5b51520e0, L_0x7fe5b560dc70;
+L_0x7fe5b560deb0 .functor MUXZ 32, L_0x7fe5b560da80, L_0x7fe5b560ddd0, L_0x7fe5b560dbd0, C4<>;
+L_0x7fe5b560dfe0 .part v0x7fe5b560ad60_0, 4, 1;
+L_0x7fe5b560e080 .part L_0x7fe5b560deb0, 0, 16;
+L_0x7fe5b560e200 .concat [ 16 16 0 0], L_0x7fe5b5152128, L_0x7fe5b560e080;
+L_0x7fe5b560e2e0 .functor MUXZ 32, L_0x7fe5b560deb0, L_0x7fe5b560e200, L_0x7fe5b560dfe0, C4<>;
+L_0x7fe5b560ef80 .functor MUXZ 32, L_0x7fe5b560e2e0, L_0x7fe5b560f080, v0x7fe5b560ac00_0, C4<>;
+S_0x7fe5b5004b30 .scope module, "g0" "bit_reversal_generate" 3 25, 3 1 0, S_0x7fe5b5004910;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 32 "in_data";
+    .port_info 1 /OUTPUT 32 "out_data";
+P_0x7fe5b5004cf0 .param/l "N" 0 3 2, +C4<00000000000000000000000000100000>;
+v0x7fe5b473f510_0 .net "in_data", 31 0, v0x7fe5b560ab10_0;  alias, 1 drivers
+v0x7fe5b473f5d0_0 .net "out_data", 31 0, L_0x7fe5b560bb20;  alias, 1 drivers
+L_0x7fe5b560ae10 .part v0x7fe5b560ab10_0, 31, 1;
+L_0x7fe5b560aed0 .part v0x7fe5b560ab10_0, 30, 1;
+L_0x7fe5b560b010 .part v0x7fe5b560ab10_0, 29, 1;
+L_0x7fe5b560b0f0 .part v0x7fe5b560ab10_0, 28, 1;
+L_0x7fe5b560b190 .part v0x7fe5b560ab10_0, 27, 1;
+L_0x7fe5b560b260 .part v0x7fe5b560ab10_0, 26, 1;
+L_0x7fe5b560b400 .part v0x7fe5b560ab10_0, 25, 1;
+L_0x7fe5b560b500 .part v0x7fe5b560ab10_0, 24, 1;
+L_0x7fe5b560b5a0 .part v0x7fe5b560ab10_0, 23, 1;
+L_0x7fe5b560b690 .part v0x7fe5b560ab10_0, 22, 1;
+L_0x7fe5b560b730 .part v0x7fe5b560ab10_0, 21, 1;
+L_0x7fe5b560b830 .part v0x7fe5b560ab10_0, 20, 1;
+L_0x7fe5b560b8d0 .part v0x7fe5b560ab10_0, 19, 1;
+L_0x7fe5b560b9e0 .part v0x7fe5b560ab10_0, 18, 1;
+L_0x7fe5b560b300 .part v0x7fe5b560ab10_0, 17, 1;
+L_0x7fe5b560bd00 .part v0x7fe5b560ab10_0, 16, 1;
+L_0x7fe5b560bda0 .part v0x7fe5b560ab10_0, 15, 1;
+L_0x7fe5b560bed0 .part v0x7fe5b560ab10_0, 14, 1;
+L_0x7fe5b560bf70 .part v0x7fe5b560ab10_0, 13, 1;
+L_0x7fe5b560c0b0 .part v0x7fe5b560ab10_0, 12, 1;
+L_0x7fe5b560c150 .part v0x7fe5b560ab10_0, 11, 1;
+L_0x7fe5b560c010 .part v0x7fe5b560ab10_0, 10, 1;
+L_0x7fe5b560c2a0 .part v0x7fe5b560ab10_0, 9, 1;
+L_0x7fe5b560c400 .part v0x7fe5b560ab10_0, 8, 1;
+L_0x7fe5b560c4a0 .part v0x7fe5b560ab10_0, 7, 1;
+L_0x7fe5b560c1f0 .part v0x7fe5b560ab10_0, 6, 1;
+L_0x7fe5b560c610 .part v0x7fe5b560ab10_0, 5, 1;
+L_0x7fe5b560c340 .part v0x7fe5b560ab10_0, 4, 1;
+L_0x7fe5b560c790 .part v0x7fe5b560ab10_0, 3, 1;
+L_0x7fe5b560c540 .part v0x7fe5b560ab10_0, 2, 1;
+L_0x7fe5b560ba80 .part v0x7fe5b560ab10_0, 1, 1;
+LS_0x7fe5b560bb20_0_0 .concat8 [ 1 1 1 1], L_0x7fe5b560ae10, L_0x7fe5b560aed0, L_0x7fe5b560b010, L_0x7fe5b560b0f0;
+LS_0x7fe5b560bb20_0_4 .concat8 [ 1 1 1 1], L_0x7fe5b560b190, L_0x7fe5b560b260, L_0x7fe5b560b400, L_0x7fe5b560b500;
+LS_0x7fe5b560bb20_0_8 .concat8 [ 1 1 1 1], L_0x7fe5b560b5a0, L_0x7fe5b560b690, L_0x7fe5b560b730, L_0x7fe5b560b830;
+LS_0x7fe5b560bb20_0_12 .concat8 [ 1 1 1 1], L_0x7fe5b560b8d0, L_0x7fe5b560b9e0, L_0x7fe5b560b300, L_0x7fe5b560bd00;
+LS_0x7fe5b560bb20_0_16 .concat8 [ 1 1 1 1], L_0x7fe5b560bda0, L_0x7fe5b560bed0, L_0x7fe5b560bf70, L_0x7fe5b560c0b0;
+LS_0x7fe5b560bb20_0_20 .concat8 [ 1 1 1 1], L_0x7fe5b560c150, L_0x7fe5b560c010, L_0x7fe5b560c2a0, L_0x7fe5b560c400;
+LS_0x7fe5b560bb20_0_24 .concat8 [ 1 1 1 1], L_0x7fe5b560c4a0, L_0x7fe5b560c1f0, L_0x7fe5b560c610, L_0x7fe5b560c340;
+LS_0x7fe5b560bb20_0_28 .concat8 [ 1 1 1 1], L_0x7fe5b560c790, L_0x7fe5b560c540, L_0x7fe5b560ba80, L_0x7fe5b560cdc0;
+LS_0x7fe5b560bb20_1_0 .concat8 [ 4 4 4 4], LS_0x7fe5b560bb20_0_0, LS_0x7fe5b560bb20_0_4, LS_0x7fe5b560bb20_0_8, LS_0x7fe5b560bb20_0_12;
+LS_0x7fe5b560bb20_1_4 .concat8 [ 4 4 4 4], LS_0x7fe5b560bb20_0_16, LS_0x7fe5b560bb20_0_20, LS_0x7fe5b560bb20_0_24, LS_0x7fe5b560bb20_0_28;
+L_0x7fe5b560bb20 .concat8 [ 16 16 0 0], LS_0x7fe5b560bb20_1_0, LS_0x7fe5b560bb20_1_4;
+L_0x7fe5b560cdc0 .part v0x7fe5b560ab10_0, 0, 1;
+S_0x7fe5b5004e50 .scope generate, "bit_reversal[0]" "bit_reversal[0]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b5005030 .param/l "i" 0 3 9, +C4<00>;
+v0x7fe5b50050d0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560ae10;  1 drivers
+S_0x7fe5b473a830 .scope generate, "bit_reversal[1]" "bit_reversal[1]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b47266f0 .param/l "i" 0 3 9, +C4<01>;
+v0x7fe5b4707c70_0 .net *"_ivl_0", 0 0, L_0x7fe5b560aed0;  1 drivers
+S_0x7fe5b4706e40 .scope generate, "bit_reversal[2]" "bit_reversal[2]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b470c4d0 .param/l "i" 0 3 9, +C4<010>;
+v0x7fe5b47318c0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560b010;  1 drivers
+S_0x7fe5b4706fb0 .scope generate, "bit_reversal[3]" "bit_reversal[3]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b470a120 .param/l "i" 0 3 9, +C4<011>;
+v0x7fe5b47312e0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560b0f0;  1 drivers
+S_0x7fe5b4709d50 .scope generate, "bit_reversal[4]" "bit_reversal[4]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b470c9f0 .param/l "i" 0 3 9, +C4<0100>;
+v0x7fe5b47308b0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560b190;  1 drivers
+S_0x7fe5b4709ec0 .scope generate, "bit_reversal[5]" "bit_reversal[5]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b470c770 .param/l "i" 0 3 9, +C4<0101>;
+v0x7fe5b47302d0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560b260;  1 drivers
+S_0x7fe5b470b450 .scope generate, "bit_reversal[6]" "bit_reversal[6]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473a4f0 .param/l "i" 0 3 9, +C4<0110>;
+v0x7fe5b473a3c0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560b400;  1 drivers
+S_0x7fe5b470b5c0 .scope generate, "bit_reversal[7]" "bit_reversal[7]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473a570 .param/l "i" 0 3 9, +C4<0111>;
+v0x7fe5b472c090_0 .net *"_ivl_0", 0 0, L_0x7fe5b560b500;  1 drivers
+S_0x7fe5b473aff0 .scope generate, "bit_reversal[8]" "bit_reversal[8]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b4731380 .param/l "i" 0 3 9, +C4<01000>;
+v0x7fe5b47399a0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560b5a0;  1 drivers
+S_0x7fe5b473b160 .scope generate, "bit_reversal[9]" "bit_reversal[9]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b472ebe0 .param/l "i" 0 3 9, +C4<01001>;
+v0x7fe5b472ec60_0 .net *"_ivl_0", 0 0, L_0x7fe5b560b690;  1 drivers
+S_0x7fe5b473b2d0 .scope generate, "bit_reversal[10]" "bit_reversal[10]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b472d960 .param/l "i" 0 3 9, +C4<01010>;
+v0x7fe5b472d9e0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560b730;  1 drivers
+S_0x7fe5b473b440 .scope generate, "bit_reversal[11]" "bit_reversal[11]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b472c6d0 .param/l "i" 0 3 9, +C4<01011>;
+v0x7fe5b473b5b0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560b830;  1 drivers
+S_0x7fe5b473b640 .scope generate, "bit_reversal[12]" "bit_reversal[12]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473b800 .param/l "i" 0 3 9, +C4<01100>;
+v0x7fe5b473b880_0 .net *"_ivl_0", 0 0, L_0x7fe5b560b8d0;  1 drivers
+S_0x7fe5b473b930 .scope generate, "bit_reversal[13]" "bit_reversal[13]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473bb00 .param/l "i" 0 3 9, +C4<01101>;
+v0x7fe5b473bb90_0 .net *"_ivl_0", 0 0, L_0x7fe5b560b9e0;  1 drivers
+S_0x7fe5b473bc50 .scope generate, "bit_reversal[14]" "bit_reversal[14]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473be20 .param/l "i" 0 3 9, +C4<01110>;
+v0x7fe5b473beb0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560b300;  1 drivers
+S_0x7fe5b473bf70 .scope generate, "bit_reversal[15]" "bit_reversal[15]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473c140 .param/l "i" 0 3 9, +C4<01111>;
+v0x7fe5b473c1d0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560bd00;  1 drivers
+S_0x7fe5b473c290 .scope generate, "bit_reversal[16]" "bit_reversal[16]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473c560 .param/l "i" 0 3 9, +C4<010000>;
+v0x7fe5b473c5f0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560bda0;  1 drivers
+S_0x7fe5b473c680 .scope generate, "bit_reversal[17]" "bit_reversal[17]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473c800 .param/l "i" 0 3 9, +C4<010001>;
+v0x7fe5b473c890_0 .net *"_ivl_0", 0 0, L_0x7fe5b560bed0;  1 drivers
+S_0x7fe5b473c950 .scope generate, "bit_reversal[18]" "bit_reversal[18]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473cb20 .param/l "i" 0 3 9, +C4<010010>;
+v0x7fe5b473cbb0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560bf70;  1 drivers
+S_0x7fe5b473cc70 .scope generate, "bit_reversal[19]" "bit_reversal[19]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473ce40 .param/l "i" 0 3 9, +C4<010011>;
+v0x7fe5b473ced0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560c0b0;  1 drivers
+S_0x7fe5b473cf90 .scope generate, "bit_reversal[20]" "bit_reversal[20]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473d160 .param/l "i" 0 3 9, +C4<010100>;
+v0x7fe5b473d1f0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560c150;  1 drivers
+S_0x7fe5b473d2b0 .scope generate, "bit_reversal[21]" "bit_reversal[21]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473d480 .param/l "i" 0 3 9, +C4<010101>;
+v0x7fe5b473d510_0 .net *"_ivl_0", 0 0, L_0x7fe5b560c010;  1 drivers
+S_0x7fe5b473d5d0 .scope generate, "bit_reversal[22]" "bit_reversal[22]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473d7a0 .param/l "i" 0 3 9, +C4<010110>;
+v0x7fe5b473d830_0 .net *"_ivl_0", 0 0, L_0x7fe5b560c2a0;  1 drivers
+S_0x7fe5b473d8f0 .scope generate, "bit_reversal[23]" "bit_reversal[23]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473dac0 .param/l "i" 0 3 9, +C4<010111>;
+v0x7fe5b473db50_0 .net *"_ivl_0", 0 0, L_0x7fe5b560c400;  1 drivers
+S_0x7fe5b473dc10 .scope generate, "bit_reversal[24]" "bit_reversal[24]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473dde0 .param/l "i" 0 3 9, +C4<011000>;
+v0x7fe5b473de70_0 .net *"_ivl_0", 0 0, L_0x7fe5b560c4a0;  1 drivers
+S_0x7fe5b473df30 .scope generate, "bit_reversal[25]" "bit_reversal[25]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473e100 .param/l "i" 0 3 9, +C4<011001>;
+v0x7fe5b473e190_0 .net *"_ivl_0", 0 0, L_0x7fe5b560c1f0;  1 drivers
+S_0x7fe5b473e250 .scope generate, "bit_reversal[26]" "bit_reversal[26]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473e420 .param/l "i" 0 3 9, +C4<011010>;
+v0x7fe5b473e4b0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560c610;  1 drivers
+S_0x7fe5b473e570 .scope generate, "bit_reversal[27]" "bit_reversal[27]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473e740 .param/l "i" 0 3 9, +C4<011011>;
+v0x7fe5b473e7d0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560c340;  1 drivers
+S_0x7fe5b473e890 .scope generate, "bit_reversal[28]" "bit_reversal[28]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473ea60 .param/l "i" 0 3 9, +C4<011100>;
+v0x7fe5b473eaf0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560c790;  1 drivers
+S_0x7fe5b473ebb0 .scope generate, "bit_reversal[29]" "bit_reversal[29]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473ed80 .param/l "i" 0 3 9, +C4<011101>;
+v0x7fe5b473ee10_0 .net *"_ivl_0", 0 0, L_0x7fe5b560c540;  1 drivers
+S_0x7fe5b473eed0 .scope generate, "bit_reversal[30]" "bit_reversal[30]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473f0a0 .param/l "i" 0 3 9, +C4<011110>;
+v0x7fe5b473f130_0 .net *"_ivl_0", 0 0, L_0x7fe5b560ba80;  1 drivers
+S_0x7fe5b473f1f0 .scope generate, "bit_reversal[31]" "bit_reversal[31]" 3 9, 3 9 0, S_0x7fe5b5004b30;
+ .timescale -12 -12;
+P_0x7fe5b473f3c0 .param/l "i" 0 3 9, +C4<011111>;
+v0x7fe5b473f450_0 .net *"_ivl_0", 0 0, L_0x7fe5b560cdc0;  1 drivers
+S_0x7fe5b473f690 .scope module, "g1" "bit_reversal_generate" 3 32, 3 1 0, S_0x7fe5b5004910;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 32 "in_data";
+    .port_info 1 /OUTPUT 32 "out_data";
+P_0x7fe5b473f860 .param/l "N" 0 3 2, +C4<00000000000000000000000000100000>;
+v0x7fe5b56090b0_0 .net "in_data", 31 0, L_0x7fe5b560e2e0;  alias, 1 drivers
+v0x7fe5b5609170_0 .net "out_data", 31 0, L_0x7fe5b560f080;  alias, 1 drivers
+L_0x7fe5b560e470 .part L_0x7fe5b560e2e0, 31, 1;
+L_0x7fe5b560e510 .part L_0x7fe5b560e2e0, 30, 1;
+L_0x7fe5b560e630 .part L_0x7fe5b560e2e0, 29, 1;
+L_0x7fe5b560e6d0 .part L_0x7fe5b560e2e0, 28, 1;
+L_0x7fe5b560e770 .part L_0x7fe5b560e2e0, 27, 1;
+L_0x7fe5b560e810 .part L_0x7fe5b560e2e0, 26, 1;
+L_0x7fe5b560e9b0 .part L_0x7fe5b560e2e0, 25, 1;
+L_0x7fe5b560ea50 .part L_0x7fe5b560e2e0, 24, 1;
+L_0x7fe5b560eaf0 .part L_0x7fe5b560e2e0, 23, 1;
+L_0x7fe5b560eb90 .part L_0x7fe5b560e2e0, 22, 1;
+L_0x7fe5b560ec30 .part L_0x7fe5b560e2e0, 21, 1;
+L_0x7fe5b560ed30 .part L_0x7fe5b560e2e0, 20, 1;
+L_0x7fe5b560edd0 .part L_0x7fe5b560e2e0, 19, 1;
+L_0x7fe5b560eee0 .part L_0x7fe5b560e2e0, 18, 1;
+L_0x7fe5b560e8b0 .part L_0x7fe5b560e2e0, 17, 1;
+L_0x7fe5b560f200 .part L_0x7fe5b560e2e0, 16, 1;
+L_0x7fe5b560f2a0 .part L_0x7fe5b560e2e0, 15, 1;
+L_0x7fe5b560f3d0 .part L_0x7fe5b560e2e0, 14, 1;
+L_0x7fe5b560f470 .part L_0x7fe5b560e2e0, 13, 1;
+L_0x7fe5b560f5b0 .part L_0x7fe5b560e2e0, 12, 1;
+L_0x7fe5b560f650 .part L_0x7fe5b560e2e0, 11, 1;
+L_0x7fe5b560f510 .part L_0x7fe5b560e2e0, 10, 1;
+L_0x7fe5b560f7a0 .part L_0x7fe5b560e2e0, 9, 1;
+L_0x7fe5b560f900 .part L_0x7fe5b560e2e0, 8, 1;
+L_0x7fe5b560f6f0 .part L_0x7fe5b560e2e0, 7, 1;
+L_0x7fe5b560fa70 .part L_0x7fe5b560e2e0, 6, 1;
+L_0x7fe5b560f840 .part L_0x7fe5b560e2e0, 5, 1;
+L_0x7fe5b560fbf0 .part L_0x7fe5b560e2e0, 4, 1;
+L_0x7fe5b560f9a0 .part L_0x7fe5b560e2e0, 3, 1;
+L_0x7fe5b560fd80 .part L_0x7fe5b560e2e0, 2, 1;
+L_0x7fe5b560fb10 .part L_0x7fe5b560e2e0, 1, 1;
+LS_0x7fe5b560f080_0_0 .concat8 [ 1 1 1 1], L_0x7fe5b560e470, L_0x7fe5b560e510, L_0x7fe5b560e630, L_0x7fe5b560e6d0;
+LS_0x7fe5b560f080_0_4 .concat8 [ 1 1 1 1], L_0x7fe5b560e770, L_0x7fe5b560e810, L_0x7fe5b560e9b0, L_0x7fe5b560ea50;
+LS_0x7fe5b560f080_0_8 .concat8 [ 1 1 1 1], L_0x7fe5b560eaf0, L_0x7fe5b560eb90, L_0x7fe5b560ec30, L_0x7fe5b560ed30;
+LS_0x7fe5b560f080_0_12 .concat8 [ 1 1 1 1], L_0x7fe5b560edd0, L_0x7fe5b560eee0, L_0x7fe5b560e8b0, L_0x7fe5b560f200;
+LS_0x7fe5b560f080_0_16 .concat8 [ 1 1 1 1], L_0x7fe5b560f2a0, L_0x7fe5b560f3d0, L_0x7fe5b560f470, L_0x7fe5b560f5b0;
+LS_0x7fe5b560f080_0_20 .concat8 [ 1 1 1 1], L_0x7fe5b560f650, L_0x7fe5b560f510, L_0x7fe5b560f7a0, L_0x7fe5b560f900;
+LS_0x7fe5b560f080_0_24 .concat8 [ 1 1 1 1], L_0x7fe5b560f6f0, L_0x7fe5b560fa70, L_0x7fe5b560f840, L_0x7fe5b560fbf0;
+LS_0x7fe5b560f080_0_28 .concat8 [ 1 1 1 1], L_0x7fe5b560f9a0, L_0x7fe5b560fd80, L_0x7fe5b560fb10, L_0x7fe5b56103f0;
+LS_0x7fe5b560f080_1_0 .concat8 [ 4 4 4 4], LS_0x7fe5b560f080_0_0, LS_0x7fe5b560f080_0_4, LS_0x7fe5b560f080_0_8, LS_0x7fe5b560f080_0_12;
+LS_0x7fe5b560f080_1_4 .concat8 [ 4 4 4 4], LS_0x7fe5b560f080_0_16, LS_0x7fe5b560f080_0_20, LS_0x7fe5b560f080_0_24, LS_0x7fe5b560f080_0_28;
+L_0x7fe5b560f080 .concat8 [ 16 16 0 0], LS_0x7fe5b560f080_1_0, LS_0x7fe5b560f080_1_4;
+L_0x7fe5b56103f0 .part L_0x7fe5b560e2e0, 0, 1;
+S_0x7fe5b473f9c0 .scope generate, "bit_reversal[0]" "bit_reversal[0]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b473fba0 .param/l "i" 0 3 9, +C4<00>;
+v0x7fe5b473fc40_0 .net *"_ivl_0", 0 0, L_0x7fe5b560e470;  1 drivers
+S_0x7fe5b473fcd0 .scope generate, "bit_reversal[1]" "bit_reversal[1]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b473fe50 .param/l "i" 0 3 9, +C4<01>;
+v0x7fe5b473fee0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560e510;  1 drivers
+S_0x7fe5b473ff90 .scope generate, "bit_reversal[2]" "bit_reversal[2]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b4740180 .param/l "i" 0 3 9, +C4<010>;
+v0x7fe5b4740210_0 .net *"_ivl_0", 0 0, L_0x7fe5b560e630;  1 drivers
+S_0x7fe5b47402c0 .scope generate, "bit_reversal[3]" "bit_reversal[3]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b4740490 .param/l "i" 0 3 9, +C4<011>;
+v0x7fe5b4740530_0 .net *"_ivl_0", 0 0, L_0x7fe5b560e6d0;  1 drivers
+S_0x7fe5b47405e0 .scope generate, "bit_reversal[4]" "bit_reversal[4]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b47407f0 .param/l "i" 0 3 9, +C4<0100>;
+v0x7fe5b4740890_0 .net *"_ivl_0", 0 0, L_0x7fe5b560e770;  1 drivers
+S_0x7fe5b4740920 .scope generate, "bit_reversal[5]" "bit_reversal[5]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b4740af0 .param/l "i" 0 3 9, +C4<0101>;
+v0x7fe5b4740b90_0 .net *"_ivl_0", 0 0, L_0x7fe5b560e810;  1 drivers
+S_0x7fe5b4740c40 .scope generate, "bit_reversal[6]" "bit_reversal[6]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b4740e10 .param/l "i" 0 3 9, +C4<0110>;
+v0x7fe5b5506bd0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560e9b0;  1 drivers
+S_0x7fe5b5506c90 .scope generate, "bit_reversal[7]" "bit_reversal[7]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5506e60 .param/l "i" 0 3 9, +C4<0111>;
+v0x7fe5b5506f00_0 .net *"_ivl_0", 0 0, L_0x7fe5b560ea50;  1 drivers
+S_0x7fe5b5506fb0 .scope generate, "bit_reversal[8]" "bit_reversal[8]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5507200 .param/l "i" 0 3 9, +C4<01000>;
+v0x7fe5b55072b0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560eaf0;  1 drivers
+S_0x7fe5b5507370 .scope generate, "bit_reversal[9]" "bit_reversal[9]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5507540 .param/l "i" 0 3 9, +C4<01001>;
+v0x7fe5b55075d0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560eb90;  1 drivers
+S_0x7fe5b5507690 .scope generate, "bit_reversal[10]" "bit_reversal[10]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5507860 .param/l "i" 0 3 9, +C4<01010>;
+v0x7fe5b55078f0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560ec30;  1 drivers
+S_0x7fe5b55079b0 .scope generate, "bit_reversal[11]" "bit_reversal[11]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5507b80 .param/l "i" 0 3 9, +C4<01011>;
+v0x7fe5b5507c10_0 .net *"_ivl_0", 0 0, L_0x7fe5b560ed30;  1 drivers
+S_0x7fe5b5507cd0 .scope generate, "bit_reversal[12]" "bit_reversal[12]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5507ea0 .param/l "i" 0 3 9, +C4<01100>;
+v0x7fe5b5507f30_0 .net *"_ivl_0", 0 0, L_0x7fe5b560edd0;  1 drivers
+S_0x7fe5b52093f0 .scope generate, "bit_reversal[13]" "bit_reversal[13]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b52095c0 .param/l "i" 0 3 9, +C4<01101>;
+v0x7fe5b5209670_0 .net *"_ivl_0", 0 0, L_0x7fe5b560eee0;  1 drivers
+S_0x7fe5b5209730 .scope generate, "bit_reversal[14]" "bit_reversal[14]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5209900 .param/l "i" 0 3 9, +C4<01110>;
+v0x7fe5b5209990_0 .net *"_ivl_0", 0 0, L_0x7fe5b560e8b0;  1 drivers
+S_0x7fe5b5209a50 .scope generate, "bit_reversal[15]" "bit_reversal[15]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5209c20 .param/l "i" 0 3 9, +C4<01111>;
+v0x7fe5b5209cb0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560f200;  1 drivers
+S_0x7fe5b5605dd0 .scope generate, "bit_reversal[16]" "bit_reversal[16]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b56060a0 .param/l "i" 0 3 9, +C4<010000>;
+v0x7fe5b5606150_0 .net *"_ivl_0", 0 0, L_0x7fe5b560f2a0;  1 drivers
+S_0x7fe5b5606210 .scope generate, "bit_reversal[17]" "bit_reversal[17]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b56063e0 .param/l "i" 0 3 9, +C4<010001>;
+v0x7fe5b5606470_0 .net *"_ivl_0", 0 0, L_0x7fe5b560f3d0;  1 drivers
+S_0x7fe5b5606530 .scope generate, "bit_reversal[18]" "bit_reversal[18]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5606700 .param/l "i" 0 3 9, +C4<010010>;
+v0x7fe5b5606790_0 .net *"_ivl_0", 0 0, L_0x7fe5b560f470;  1 drivers
+S_0x7fe5b5606850 .scope generate, "bit_reversal[19]" "bit_reversal[19]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5606a20 .param/l "i" 0 3 9, +C4<010011>;
+v0x7fe5b5606ab0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560f5b0;  1 drivers
+S_0x7fe5b5606b70 .scope generate, "bit_reversal[20]" "bit_reversal[20]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5606d40 .param/l "i" 0 3 9, +C4<010100>;
+v0x7fe5b5606dd0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560f650;  1 drivers
+S_0x7fe5b5606e90 .scope generate, "bit_reversal[21]" "bit_reversal[21]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5607060 .param/l "i" 0 3 9, +C4<010101>;
+v0x7fe5b56070f0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560f510;  1 drivers
+S_0x7fe5b56071b0 .scope generate, "bit_reversal[22]" "bit_reversal[22]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5607380 .param/l "i" 0 3 9, +C4<010110>;
+v0x7fe5b5607410_0 .net *"_ivl_0", 0 0, L_0x7fe5b560f7a0;  1 drivers
+S_0x7fe5b56074d0 .scope generate, "bit_reversal[23]" "bit_reversal[23]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b56076a0 .param/l "i" 0 3 9, +C4<010111>;
+v0x7fe5b5607730_0 .net *"_ivl_0", 0 0, L_0x7fe5b560f900;  1 drivers
+S_0x7fe5b56077f0 .scope generate, "bit_reversal[24]" "bit_reversal[24]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b56079c0 .param/l "i" 0 3 9, +C4<011000>;
+v0x7fe5b5607a50_0 .net *"_ivl_0", 0 0, L_0x7fe5b560f6f0;  1 drivers
+S_0x7fe5b5607b10 .scope generate, "bit_reversal[25]" "bit_reversal[25]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5607ce0 .param/l "i" 0 3 9, +C4<011001>;
+v0x7fe5b5607d70_0 .net *"_ivl_0", 0 0, L_0x7fe5b560fa70;  1 drivers
+S_0x7fe5b5607e30 .scope generate, "bit_reversal[26]" "bit_reversal[26]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5608000 .param/l "i" 0 3 9, +C4<011010>;
+v0x7fe5b5608090_0 .net *"_ivl_0", 0 0, L_0x7fe5b560f840;  1 drivers
+S_0x7fe5b5608150 .scope generate, "bit_reversal[27]" "bit_reversal[27]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5608320 .param/l "i" 0 3 9, +C4<011011>;
+v0x7fe5b56083b0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560fbf0;  1 drivers
+S_0x7fe5b5608470 .scope generate, "bit_reversal[28]" "bit_reversal[28]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5608640 .param/l "i" 0 3 9, +C4<011100>;
+v0x7fe5b56086d0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560f9a0;  1 drivers
+S_0x7fe5b5608790 .scope generate, "bit_reversal[29]" "bit_reversal[29]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5608960 .param/l "i" 0 3 9, +C4<011101>;
+v0x7fe5b56089b0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560fd80;  1 drivers
+S_0x7fe5b5608a70 .scope generate, "bit_reversal[30]" "bit_reversal[30]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5608c40 .param/l "i" 0 3 9, +C4<011110>;
+v0x7fe5b5608cd0_0 .net *"_ivl_0", 0 0, L_0x7fe5b560fb10;  1 drivers
+S_0x7fe5b5608d90 .scope generate, "bit_reversal[31]" "bit_reversal[31]" 3 9, 3 9 0, S_0x7fe5b473f690;
+ .timescale -12 -12;
+P_0x7fe5b5608f60 .param/l "i" 0 3 9, +C4<011111>;
+v0x7fe5b5608ff0_0 .net *"_ivl_0", 0 0, L_0x7fe5b56103f0;  1 drivers
+    .scope S_0x7fe5b5004790;
+T_0 ;
+    %pushi/vec4 305419896, 0, 32;
+    %assign/vec4 v0x7fe5b560ab10_0, 0;
+    %pushi/vec4 5, 0, 5;
+    %assign/vec4 v0x7fe5b560ad60_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x7fe5b560ac00_0, 0;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v0x7fe5b560ac00_0, 0;
+    %end;
+    .thread T_0;
+    .scope S_0x7fe5b5004790;
+T_1 ;
+    %vpi_call 2 19 "$monitor", "in: %h, shft_amt = %b, out = %h", v0x7fe5b560ab10_0, v0x7fe5b560ad60_0, v0x7fe5b560ac90_0 {0 0 0};
+    %vpi_call 2 20 "$dumpfile", "waveform.vcd" {0 0 0};
+    %vpi_call 2 21 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fe5b5004790 {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0x7fe5b5004790;
+T_2 ;
+    %delay 8, 0;
+    %load/vec4 v0x7fe5b560ab10_0;
+    %ix/getv 4, v0x7fe5b560ad60_0;
+    %shiftl 4;
+    %store/vec4 v0x7fe5b560a9a0_0, 0, 32;
+    %load/vec4 v0x7fe5b560ab10_0;
+    %ix/getv 4, v0x7fe5b560ad60_0;
+    %shiftr 4;
+    %store/vec4 v0x7fe5b560aa60_0, 0, 32;
+    %vpi_call 2 29 "$display", "in<<shft_amt = %h, in>>shft_amt = %h", v0x7fe5b560a9a0_0, v0x7fe5b560aa60_0 {0 0 0};
+    %end;
+    .thread T_2;
+    .scope S_0x7fe5b5004790;
+T_3 ;
+    %delay 10, 0;
+    %vpi_call 2 34 "$finish" {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_barrel.v";
+    "Barrel_shifter.v";

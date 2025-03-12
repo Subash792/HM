@@ -1,0 +1,209 @@
+$date
+	Wed Mar 12 23:59:13 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb $end
+$var wire 32 ! out [31:0] $end
+$var reg 32 " a [31:0] $end
+$var reg 32 # b [31:0] $end
+$var reg 32 $ in [31:0] $end
+$var reg 1 % lr $end
+$var reg 5 & shft_amt [4:0] $end
+$scope module dut $end
+$var wire 32 ' in [31:0] $end
+$var wire 1 % lr $end
+$var wire 5 ( shift_amt [4:0] $end
+$var wire 32 ) s6_inv [31:0] $end
+$var wire 32 * s6 [31:0] $end
+$var wire 32 + s5 [31:0] $end
+$var wire 32 , s4 [31:0] $end
+$var wire 32 - s3 [31:0] $end
+$var wire 32 . s2 [31:0] $end
+$var wire 32 / s1 [31:0] $end
+$var wire 32 0 out [31:0] $end
+$var wire 32 1 in_rev [31:0] $end
+$scope module g0 $end
+$var wire 32 2 in_data [31:0] $end
+$var wire 32 3 out_data [31:0] $end
+$scope begin bit_reversal[0] $end
+$upscope $end
+$scope begin bit_reversal[1] $end
+$upscope $end
+$scope begin bit_reversal[2] $end
+$upscope $end
+$scope begin bit_reversal[3] $end
+$upscope $end
+$scope begin bit_reversal[4] $end
+$upscope $end
+$scope begin bit_reversal[5] $end
+$upscope $end
+$scope begin bit_reversal[6] $end
+$upscope $end
+$scope begin bit_reversal[7] $end
+$upscope $end
+$scope begin bit_reversal[8] $end
+$upscope $end
+$scope begin bit_reversal[9] $end
+$upscope $end
+$scope begin bit_reversal[10] $end
+$upscope $end
+$scope begin bit_reversal[11] $end
+$upscope $end
+$scope begin bit_reversal[12] $end
+$upscope $end
+$scope begin bit_reversal[13] $end
+$upscope $end
+$scope begin bit_reversal[14] $end
+$upscope $end
+$scope begin bit_reversal[15] $end
+$upscope $end
+$scope begin bit_reversal[16] $end
+$upscope $end
+$scope begin bit_reversal[17] $end
+$upscope $end
+$scope begin bit_reversal[18] $end
+$upscope $end
+$scope begin bit_reversal[19] $end
+$upscope $end
+$scope begin bit_reversal[20] $end
+$upscope $end
+$scope begin bit_reversal[21] $end
+$upscope $end
+$scope begin bit_reversal[22] $end
+$upscope $end
+$scope begin bit_reversal[23] $end
+$upscope $end
+$scope begin bit_reversal[24] $end
+$upscope $end
+$scope begin bit_reversal[25] $end
+$upscope $end
+$scope begin bit_reversal[26] $end
+$upscope $end
+$scope begin bit_reversal[27] $end
+$upscope $end
+$scope begin bit_reversal[28] $end
+$upscope $end
+$scope begin bit_reversal[29] $end
+$upscope $end
+$scope begin bit_reversal[30] $end
+$upscope $end
+$scope begin bit_reversal[31] $end
+$upscope $end
+$upscope $end
+$scope module g1 $end
+$var wire 32 4 in_data [31:0] $end
+$var wire 32 5 out_data [31:0] $end
+$scope begin bit_reversal[0] $end
+$upscope $end
+$scope begin bit_reversal[1] $end
+$upscope $end
+$scope begin bit_reversal[2] $end
+$upscope $end
+$scope begin bit_reversal[3] $end
+$upscope $end
+$scope begin bit_reversal[4] $end
+$upscope $end
+$scope begin bit_reversal[5] $end
+$upscope $end
+$scope begin bit_reversal[6] $end
+$upscope $end
+$scope begin bit_reversal[7] $end
+$upscope $end
+$scope begin bit_reversal[8] $end
+$upscope $end
+$scope begin bit_reversal[9] $end
+$upscope $end
+$scope begin bit_reversal[10] $end
+$upscope $end
+$scope begin bit_reversal[11] $end
+$upscope $end
+$scope begin bit_reversal[12] $end
+$upscope $end
+$scope begin bit_reversal[13] $end
+$upscope $end
+$scope begin bit_reversal[14] $end
+$upscope $end
+$scope begin bit_reversal[15] $end
+$upscope $end
+$scope begin bit_reversal[16] $end
+$upscope $end
+$scope begin bit_reversal[17] $end
+$upscope $end
+$scope begin bit_reversal[18] $end
+$upscope $end
+$scope begin bit_reversal[19] $end
+$upscope $end
+$scope begin bit_reversal[20] $end
+$upscope $end
+$scope begin bit_reversal[21] $end
+$upscope $end
+$scope begin bit_reversal[22] $end
+$upscope $end
+$scope begin bit_reversal[23] $end
+$upscope $end
+$scope begin bit_reversal[24] $end
+$upscope $end
+$scope begin bit_reversal[25] $end
+$upscope $end
+$scope begin bit_reversal[26] $end
+$upscope $end
+$scope begin bit_reversal[27] $end
+$upscope $end
+$scope begin bit_reversal[28] $end
+$upscope $end
+$scope begin bit_reversal[29] $end
+$upscope $end
+$scope begin bit_reversal[30] $end
+$upscope $end
+$scope begin bit_reversal[31] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b111100110101000101100010 5
+b1000110100010101100111100000000 4
+b11110011010100010110001001000 3
+b10010001101000101011001111000 2
+b11110011010100010110001001000 1
+b1000110100010101100111100000000 0
+b10010001101000101011001111000 /
+b100100011010001010110011110000 .
+b100100011010001010110011110000 -
+b1000110100010101100111100000000 ,
+b1000110100010101100111100000000 +
+b1000110100010101100111100000000 *
+b111100110101000101100010 )
+b101 (
+b10010001101000101011001111000 '
+b101 &
+0%
+b10010001101000101011001111000 $
+bx #
+bx "
+b1000110100010101100111100000000 !
+$end
+#5
+b100100011010001010110011 )
+b100100011010001010110011 5
+b11001101010001011000100100000000 *
+b11001101010001011000100100000000 4
+b11001101010001011000100100000000 +
+b11001101010001011000100100000000 ,
+b111100110101000101100010010000 -
+b111100110101000101100010010000 .
+b11110011010100010110001001000 /
+b100100011010001010110011 !
+b100100011010001010110011 0
+1%
+#8
+b100100011010001010110011 #
+b1000110100010101100111100000000 "
+#10
